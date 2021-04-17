@@ -19,6 +19,10 @@ public class BoardEntity {
     @Column
     private String contents;
 
+    public BoardEntity() {
+        this.id = id;
+    }
+
     public BoardEntity(Long id, String subject, String contents) {
         this.subject = subject;
         this.contents = contents;
